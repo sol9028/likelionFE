@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>soldolist</title>
+    <link rel="stylesheet" href="todolist.css" />
+    <script src="todolist.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-title">
+        <h1>Sol's To-do-List</h1>
+      </div>
+
+       <div class="wrapper">
+          <input type="text" id="todoInput" placeholder="오늘의 할일은?" autofocus/>
+          <button type="button" id="addBtn" onclick="addTodo ()">💜</button>
+       </div>
+
+       <div>
+        <!--생성되는 todolist들 -->
+        <ul id="addTodo" class="Todolist"> 
+            <li><div id='result'></div></li>
+        </ul>
+    </div>
+    <div class="footer">
+      <button type="button" id = "allClear" onclick="allClearList()">모두 삭제</button>
+    </div>
+   </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif ;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom,#E6E6FA 0%, #FFF0F5);
+}
+
+.container {
+  width: 400px;
+  margin: 50px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-height: auto; 
+  transition: min-height 0.3s; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  text-align: center;
+}
+
+#todoInput {
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#addBtn,
+.footer button{
+  padding: 14px 14px;
+  background-color: #E6E6FA ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#addBtn:hover,
+.footer button:hover{
+  background-color:#8f8ff3 ;
+}
+
+
+.Todolist {
+  width: 100%;
+}
+
+
+.Todolist li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 내용을 양쪽 끝으로 정렬 */
+  list-style: none;
+  line-height: 40px; 
+  padding: 0 20px; /* 양쪽 여백 크기 */
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 15px; 
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 9px; /* 아래 여백 */
+}
+
+.Todolist li:hover {
+  background-color: #E6E6FA ;
+}
+
+.Todolist li.completed {
+  text-decoration: line-through;
+}
+
+.wrapper ,.footer{ 
+  font-weight: 600;
+  text-indent: 15px;
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: right;
+  font-size: 15px;
+}
+
+.remove-btn {
+  margin-left: auto;
+}
